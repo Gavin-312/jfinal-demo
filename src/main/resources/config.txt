@@ -1,0 +1,4 @@
+jdbcUrl = jdbc:mysql://localhost/bank_gantao?characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull
+user = root
+password =123456
+devMode = true

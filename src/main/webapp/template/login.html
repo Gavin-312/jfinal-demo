@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h2>hello！！</h2>
+    <form action="/hello/home" method="post">
+        <div>
+            id：
+            <input type="text" name="bank.bId">#(idMsg)
+        </div>
+        <div>
+            账号：
+            <input type="text" name="bank.bankName">#(nameMsg)
+        </div>
+        <div>
+            <input type="submit" value="登陆">
+        </div>
+    </form>
+
+    <div>
+        #for(b : bank)
+            #(b.b_id)
+            #(b.bank_name)
+        #end
+        <br>
+        #for(id : bId)
+            #(id.b_id)
+        #end
+
+        <br>
+        #for(site : deposite)
+            #(site.amount)
+        #end
+    </div>
+</body>
+</html>
