@@ -21,7 +21,7 @@ public class SqlController extends Controller {
     @Before(GET.class)
     public void index() {
         List<Record> deposites = sqlService.relation(101001,101004);
-        System.out.println("deposites = " + Arrays.toString(deposites.toArray()));
+        System.out.println("deposites == " + Arrays.toString(deposites.toArray()));
         setAttr("deposite",deposites);
         render("/template/login.html");
     }
